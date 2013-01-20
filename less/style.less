@@ -1,0 +1,212 @@
+/**
+ * Author: Daniel Albrecht
+ * stylesheet cardgame
+ */
+
+@import "bmd_var.less";
+@import "bmd_functions.less";
+@import "bmd_button.less";
+@import "bmd_form.less";
+@import "bmd_typo.less";
+@import "bmd_kd_button.less";
+@import "bmd_mediaqueries.less";
+@import "bmd_grid.less";
+
+
+
+html, body{
+	overflow: hidden;
+	height: 100%;
+}
+
+
+#cardeck{
+	width:100%;
+	height:100%;
+	text-align: center;
+	position: relative;
+	overflow:hidden;
+	padding: 15px;
+
+	div.card{
+		.border-radius(20px);
+		display:block;
+		position:absolute;
+		background-color: #fff;
+
+		margin: auto;
+		width:90%;
+		height: 90%;
+		max-width: 640px;
+		max-height: 920px;
+		padding:20px;
+		.transition();
+		z-index: 1;
+		border: solid 10px red;
+
+		&:first-child{
+			z-index: 4!important;
+			.box-shadow(0 1px 12px rgba(0,0,0,.7));
+		}
+		&.last{
+			z-index: 2;
+			background: url('../img/svg/Hintergrund.svg') repeat #fff;
+			border-color: black;
+		}
+
+		span{
+			display: block;
+			position: absolute;
+			width: 18%;
+			height: 18%;
+			&:last-child{
+				bottom: 10px;
+				right:10px;
+				.rotate(180deg);
+			}		
+		}
+		span.main{
+			height:80%;
+			width:80%;
+			background: none;
+			margin-top:10%;
+			margin-left:10%;
+		}
+
+		&[class*="card_0"] span{
+			background: url('../img/svg/herz.svg') no-repeat center;
+			color: red;
+			.background-size(contain);
+		}		
+		&[class*="card_1"] span{
+			background: url('../img/svg/karo.svg') no-repeat center;
+			color: red;
+			.background-size(contain);
+		}
+		&[class*="card_2"] span{
+			background: url('../img/svg/kreuz.svg') no-repeat center;
+			.background-size(contain);
+		}
+		&[class*="card_3"] span{
+			background: url('../img/svg/piek.svg') no-repeat center;
+			.background-size(contain);
+		}
+
+		// Herz- Reihe
+		&.card_0_K{
+			background: url('../img/svg/Barney.svg') no-repeat center bottom #fff;
+		}
+		&.card_0_D{
+			background: url('../img/svg/gina.svg') no-repeat center bottom #fff;
+		}
+		&.card_0_B{
+			background: url('../img/svg/alf.svg') no-repeat center bottom #fff;
+		}
+		&.card_0_A{
+			background: url('../img/svg/herz.svg') no-repeat center center #fff;
+		}
+
+		// Karo- Reihe
+		&.card_1_K{
+			background: url('../img/svg/elvis.svg') no-repeat center bottom #fff;
+		}
+		&.card_1_D{
+			background: url('../img/svg/kitty.svg') no-repeat center bottom #fff;
+		}
+		&.card_1_B{
+			background: url('../img/svg/Albundy.svg') no-repeat center bottom #fff;
+		}
+		&.card_1_A{
+			background: url('../img/svg/karo.svg') no-repeat center center #fff;
+		}
+
+
+		// Kreuz- Reihe
+		&.card_2_K{
+			background: url('../img/svg/ChaRLIE.svg') no-repeat center bottom #fff;
+		}
+		&.card_2_D{
+			background: url('../img/svg/penny.svg') no-repeat center bottom #fff;
+		}
+		&.card_2_B{
+			background: url('../img/svg/chuck.svg') no-repeat center bottom #fff;
+		}
+		&.card_2_A{
+			background: url('../img/svg/kreuz.svg') no-repeat center center #fff;
+		}
+
+		// Piek- Reihe
+		&.card_3_K{
+			background: url('../img/svg/Brain.svg') no-repeat center bottom #fff;
+		}
+		&.card_3_D{
+			background: url('../img/svg/amy.svg') no-repeat center bottom #fff;
+		}
+		&.card_3_B{
+			background: url('../img/svg/Homer.svg') no-repeat center bottom #fff;
+		}
+		&.card_3_A{
+			background: url('../img/svg/piek.svg') no-repeat center center #fff;
+		}
+
+		
+		&[class*='_K'],&[class*='_D'],&[class*='_B'],&[class*='_A']{
+			.background-size(contain);
+			span.main{
+				display: none;
+			}
+		} 
+
+	}
+}
+
+
+
+#info{
+	height:118%;
+	width: 100%;
+	position: absolute;
+	top:82%;
+	z-index: 10!important;
+
+	#trigger{
+		height:400px;
+		width:100%;
+		.opacity(30);
+		position: absolute;
+		z-index: 11;
+		left: 0;
+		right: 0;
+		.transition(opacity 0.6s linear);
+	}
+
+	.active #trigger{
+		.opacity(100);
+	}
+
+	#trigger_up, #trigger_down{
+		#gradient > .vertical( rgba(0,0,0,0) , rgba(0,0,0,0.8) );
+		height:200px;
+		display: block;
+		width:100%;
+		position: relative;
+	}
+	#trigger_down{
+		#gradient > .vertical( rgba(0,0,0,0.8),rgba(0,0,0,0) );
+	}
+
+	#content{
+		margin-top: 200px;
+		background-color: white;
+		height:100%;
+		.box-shadow(0 0 12px rgba(0,0,0,.7));
+		padding:20px;
+		padding-bottom: 120px;
+		overflow: scroll!important;
+		text-align: left;
+		-webkit-overflow-scrolling: touch;
+	}
+
+}
+
+

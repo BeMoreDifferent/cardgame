@@ -1,0 +1,100 @@
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <nav>
+
+
+        </nav>
+        <div id="cardeck">
+            <div class="card last"><a href="#">Letzte Karte</a></div>
+        </div>
+        <aside>
+        </aside>
+        <footer id="info">
+            <div id="trigger">
+                <div id="trigger_up"></div>
+                <div id="trigger_down"></div>
+            </div>
+            <div id="content">
+                <h1>foooobar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+
+<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.</p>
+
+<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+
+
+            </div>
+        </footer>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/helper.min.js"></script>
+        <script src="js/main.js"></script>
+
+<!--
+        <script type="text/javascript">
+/*!
+* basket.js
+* v0.3.0 - 2012-12-18
+* http://addyosmani.github.com/basket.js
+* (c) Addy Osmani; MIT License
+* Created by: Addy Osmani, Sindre Sorhus, Andrée Hansson
+* Contributors: Ironsjp, Mathias Bynens, Rick Waldron, Felipe Morais
+*/
+(function(e,t){"use strict";RSVP.all=function(e){var t,n=[],r=new RSVP.Promise,i=e.length,s=function(e){return function(t){o(e,t)}},o=function(e,t){n[e]=t,--i===0&&r.resolve(n)},u=function(e){r.reject(e)};for(t=0;t<i;t++)e[t].then(s(t),u);return r};var n=t.head||t.getElementsByTagName("head")[0],r="basket-",i=5e3,s=function(e,t){try{return localStorage.setItem(r+e,JSON.stringify(t)),!0}catch(n){if(n.name.toUpperCase().indexOf("QUOTA")>=0){var i,o=[];for(i in localStorage)i.indexOf(r)===0&&o.push(JSON.parse(localStorage[i]));if(o.length)return o.sort(function(e,t){return e.stamp-t.stamp}),basket.remove(o[0].key),s(e,t);return}return}},o=function(e){var t=new XMLHttpRequest,n=new RSVP.Promise;return t.open("GET",e),t.onreadystatechange=function(){t.readyState===4&&(t.status===200?n.resolve(t.responseText):n.reject(new Error(t.statusText)))},t.send(),n},u=function(e){return o(e.url).then(function(t){var n=f(e,t);return s(e.key,n),t})},a=function(e){var r=t.createElement("script");r.defer=!0,r.text=e,n.appendChild(r)},f=function(e,t){var n=+(new Date);return e.data=t,e.stamp=n,e.expire=n+(e.expire||i)*60*60*1e3,e},l=function(e){var t,n;if(!e.url)return;return e.key=e.key||e.url,t=basket.get(e.key),e.execute=e.execute!==!1,!t||t.expire- +(new Date)<0||e.unique!==t.unique?(e.unique&&(e.url+=(e.url.indexOf("?")>0?"&":"?")+"basket-unique="+e.unique),n=u(e)):(n=new RSVP.Promise,n.resolve(t.data)),e.execute?n.then(a):n};e.basket={require:function(){var e,t,n=[];for(e=0,t=arguments.length;e<t;e++)n.push(l(arguments[e]));return RSVP.all(n)},remove:function(e){return localStorage.removeItem(r+e),this},get:function(e){var t=localStorage.getItem(r+e);try{return JSON.parse(t||"false")}catch(n){return!1}},clear:function(e){var t,n,i=+(new Date);for(t in localStorage)n=t.split(r)[1],n&&(!e||this.get(n).expire<=i)&&this.remove(n);return this}},basket.clear(!0)})(this,document);
+        </script>
+
+        <script type="text/javascript">
+        basket.require({ url: "js/jquery.min.js", url: "js/plugins.js", url: "js/helper.min.js" })
+        .then(function() {
+            basket.require({ url: 'js/main.js' })
+        });
+        </script>
+-->
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    </body>
+</html>
