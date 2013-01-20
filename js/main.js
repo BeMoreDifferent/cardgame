@@ -20,7 +20,7 @@ $(document).ready(function(){
         }
     });
 
-
+/*
     $('#info').pep({
         axis: 'y',
         activeClass: 'active', 
@@ -34,7 +34,7 @@ $(document).ready(function(){
             else if( (-200) >= o.top) t.css({ 'top': '-200px' });
         }
     });
-
+*/
 });
 
 
@@ -115,9 +115,9 @@ $.fn.cards = function(opt){
         if ($('div.card').length) {
             //$('div.card:first-child').transition({rotateY: '180deg'}, 200);
             $('div.card:first-child').pep({ 
-                debug:false,
+                //debug:false,
                 axis: 'x',
-                shouldEase:false,
+                //shouldEase:false,
                 //multiplier: 2.3,
                 stop: function(){
                     checkPosition();
