@@ -117,7 +117,7 @@ $.fn.cards = function(opt){
             $('div.card:first-child').pep({ 
                 debug:false,
                 axis: 'x',
-                multiplier: 2.3,
+                //multiplier: 2.3,
                 cssEaseDuration: 800,
                 stop: function(){
                     checkPosition();
