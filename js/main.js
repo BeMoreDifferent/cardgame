@@ -123,6 +123,9 @@ $.fn.cards = function(opt){
                     checkPosition();
                 }
             });
+            $('div.card:first-child').click(function(){
+                nextCard();
+            });
         }
     }
 
