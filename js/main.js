@@ -118,7 +118,7 @@ $.fn.cards = function(opt){
                 debug:false,
                 axis: 'x',
                 shouldEase:false,
-                multiplier: 2.3,
+                //multiplier: 2.3,
                 stop: function(){
                     checkPosition();
                 }
