@@ -24,8 +24,8 @@ $(document).ready(function(){
     $('#info').pep({
         axis: 'y',
         activeClass: 'active', 
-        //multiplier: 2,
-        cssEaseDuration: 800,
+        multiplier: 2.3,
+        shouldEase:false,
         drag: function(ev, obj){ 
             var t = $('#info');
             var w = $(window).height();
@@ -117,8 +117,8 @@ $.fn.cards = function(opt){
             $('div.card:first-child').pep({ 
                 debug:false,
                 axis: 'x',
-                //multiplier: 2.3,
-                cssEaseDuration: 800,
+                shouldEase:false,
+                multiplier: 2.3,
                 stop: function(){
                     checkPosition();
                 }
