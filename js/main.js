@@ -86,24 +86,24 @@ $.fn.cards = function(opt){
 		};
 	}
 
-	function nextCard(){
-		$('div.card:first-child').transition({
+	function nextCard(tc){
+		tc.transition({
             opacity: 0,
             scale: 1.1,
             left: 900
         }, 400);
         setTimeout(function(){
-	        $('div.card:first-child').remove();
+	        tc.remove();
 	        init();
         }, 200);
 	}
 
 
-    function checkPosition(){
-        var tc = $('div.card:first-child');
+    function checkPosition(tc){
+        //var tc = $('div.card:first-child');
         var p = tc.position();
         if(p.left >= 200){
-            nextCard();
+            nextCard(tc);
         }else{
             tc.transition({ left:15 }, 200);
             return false;
@@ -119,7 +119,7 @@ $.fn.cards = function(opt){
                 useCSSTranslation: true,
                 multiplier: 2.3,
                 stop: function(ev, obj){
-                    obj.$el.addClass('animated fadeOutRight'); 
+                    checkPosition( obj.$el ); 
                 }
             });
             $('div.card:first-child').click(function(){
