@@ -101,6 +101,7 @@ $.fn.cards = function(opt){
 
     function checkPosition(tc){
         //var tc = $('div.card:first-child');
+        console.log(tc);
         var p = tc.position();
         if(p.left >= 100){
             nextCard(tc);
