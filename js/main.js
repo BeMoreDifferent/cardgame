@@ -103,10 +103,10 @@ $.fn.cards = function(opt){
         //var tc = $('div.card:first-child');
         var p = tc.position();
         console.log(p);
-        if(p.left >= 100){
+        if(p.left >= 140){
             nextCard(tc);
         }else{
-            tc.transition({ left:15 }, 200);
+            tc.transition({ translate:[0,0] }, 200);
         }
     }
 
