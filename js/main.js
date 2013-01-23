@@ -118,8 +118,8 @@ $.fn.cards = function(opt){
                 axis: 'x',
                 useCSSTranslation: true,
                 multiplier: 2.3,
-                stop: function(){
-                    checkPosition();
+                stop: function(ev, obj){
+                    obj.$el.addClass('animated fadeOutRight'); 
                 }
             });
             $('div.card:first-child').click(function(){
