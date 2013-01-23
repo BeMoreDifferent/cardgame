@@ -13,14 +13,14 @@ MBP.startupImage();
 
 $(document).ready(function(){
 	$('#cardeck').cards();
-
+/*
     $.shake({
         callback: function() {
             $('#cardeck').cards();
         }
     });
 
-/*
+
     $('#info').pep({
         axis: 'y',
         activeClass: 'active', 
@@ -115,10 +115,9 @@ $.fn.cards = function(opt){
         if ($('div.card').length) {
             //$('div.card:first-child').transition({rotateY: '180deg'}, 200);
             $('div.card:first-child').pep({ 
-                //debug:false,
                 axis: 'x',
-                //shouldEase:false,
-                //multiplier: 2.3,
+                useCSSTranslation: true,
+                multiplier: 2.3,
                 stop: function(){
                     checkPosition();
                 }
