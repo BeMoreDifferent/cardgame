@@ -90,7 +90,7 @@ $.fn.cards = function(opt){
 		tc.transition({
             opacity: 0,
             scale: 1.1,
-            left: 900
+            ltranslate:[900,0] 
         }, 400);
         setTimeout(function(){
 	        tc.remove();
@@ -100,9 +100,7 @@ $.fn.cards = function(opt){
 
 
     function checkPosition(tc){
-        //var tc = $('div.card:first-child');
         var p = tc.position();
-        console.log(p);
         if(p.left >= 140){
             nextCard(tc);
         }else{
@@ -113,7 +111,6 @@ $.fn.cards = function(opt){
 
     function init(){
         if ($('div.card').length) {
-            //$('div.card:first-child').transition({rotateY: '180deg'}, 200);
             $('div.card:first-child').pep({ 
                 axis: 'x',
                 useCSSTranslation: true,
