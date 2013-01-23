@@ -95,7 +95,7 @@ $.fn.cards = function(opt){
         setTimeout(function(){
 	        tc.remove();
 	        init();
-        }, 200);
+        }, 20);
 	}
 
 
@@ -107,7 +107,6 @@ $.fn.cards = function(opt){
             nextCard(tc);
         }else{
             tc.transition({ left:15 }, 200);
-            return false;
         }
     }
 
