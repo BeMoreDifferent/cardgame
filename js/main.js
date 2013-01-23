@@ -89,9 +89,9 @@ $.fn.cards = function(opt){
 	function nextCard(tc){
 		tc.transition({
             opacity: 0,
-            scale: 1.1,
+            left: 900,
             ltranslate:[900,0] 
-        }, 400);
+        }, 400, 'ease');
         setTimeout(function(){
 	        tc.remove();
 	        init();
@@ -104,7 +104,7 @@ $.fn.cards = function(opt){
         if(p.left >= 140){
             nextCard(tc);
         }else{
-            tc.transition({ translate:[0,0] }, 200);
+            tc.transition({ translate:[0,0], left: 15 }, 200);
         }
     }
 
