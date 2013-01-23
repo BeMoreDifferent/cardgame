@@ -13,14 +13,14 @@ MBP.startupImage();
 
 $(document).ready(function(){
 	$('#cardeck').cards();
-/*
+
     $.shake({
         callback: function() {
             $('#cardeck').cards();
         }
     });
 
-
+/*
     $('#info').pep({
         axis: 'y',
         activeClass: 'active', 
@@ -102,7 +102,7 @@ $.fn.cards = function(opt){
     function checkPosition(tc){
         //var tc = $('div.card:first-child');
         var p = tc.position();
-        if(p.left >= 200){
+        if(p.left >= 100){
             nextCard(tc);
         }else{
             tc.transition({ left:15 }, 200);
