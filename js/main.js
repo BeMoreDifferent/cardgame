@@ -95,7 +95,7 @@ $.fn.cards = function(opt){
         setTimeout(function(){
 	        tc.remove();
 	        init();
-        }, 20);
+        }, 200);
 	}
 
 
