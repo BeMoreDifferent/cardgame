@@ -117,13 +117,9 @@ $.fn.cards = function(opt){
             $('div.card:first-child').pep({ 
                 axis: 'x',
                 useCSSTranslation: true,
-                multiplier: 2.3,
                 stop: function(ev, obj){
                     checkPosition( obj.$el ); 
                 }
-            });
-            $('div.card:first-child').click(function(){
-                nextCard();
             });
         }
     }
